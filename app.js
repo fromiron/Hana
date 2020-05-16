@@ -9,7 +9,7 @@ import globalRouter from './routers/globalRouter';
 const app = express();
 
 app.use(helmet()); //セキュリティー
-
+app.use('/public', express.static('public'));
 app.set('views', path.join(__dirname, 'views')); //pug view engine設定、及びパス指定
 app.set('view engine', 'pug');
 
