@@ -6,24 +6,26 @@ export const home = (req, res) => {
   });
 };
 
-
-
 export const about = (req, res) => {
-    res.render('about', {
-      pageTitle: 'Rabbit Sitter Hana - About Us',
-    });
-  };
+  res.render('about', {
+    pageTitle: 'Rabbit Sitter Hana - About Us',
+  });
+};
 
-  
 export const plan = (req, res) => {
-    res.render('plan', {
-      pageTitle: 'Rabbit Sitter Hana - Plan',
-    });
-  };
+  res.render('plan', {
+    pageTitle: 'Rabbit Sitter Hana - Plan',
+  });
+};
 
-  
+export const service = (req, res) => {
+  res.render('service', {
+    pageTitle: 'Rabbit Sitter Hana - Service',
+  });
+};
+
 export const contact = (req, res) => {
-    res.render('contact', {
-      pageTitle: 'Rabbit Sitter Hana - Contact Us',
-    });
-  };
+  res.render('contact', {
+    pageTitle: 'Rabbit Sitter Hana - Contact Us',
+  });
+};

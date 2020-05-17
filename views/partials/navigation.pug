@@ -1,16 +1,24 @@
 nav.navigation
     .navigation.logo
         <i class="fas fa-paw"></i>Pet Sitter HANA
-    .navigation.menu
+    .navigation.menu#navigation_menu
         ul.navigation.menu__btn_wrap
             li.navigation.menu__btn
-                a(href="/") Home
+                a(href="/") ホーム
             li.navigation.menu__btn
                 a(href="/about") About Us
             li.navigation.menu__btn
-                a(href="/plan") Plan
+                a(href="/service") サービス内容
+            li.navigation.menu__btn
+                a(href="/plan") 料金プラン
             li.navigation.menu__btn
                 a(href="/contact") Contact Us
-
     .navigation_toggle_btn
         a(href="#")  <i class="fas fa-bars"></i>
+    script.
+        const toggle = document.querySelector('.navigation_toggle_btn');
+        const menu = document.querySelector('#navigation_menu');
+        const handleClick = () => {
+        menu.classList.toggle('active');
+        };
+        toggle.addEventListener('click', handleClick);

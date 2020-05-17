@@ -1,4 +1,16 @@
 extends layout
 
 block content
-	h1 home test
+	section.home
+		msg.home_msg_container
+				.home_title
+					h3.home_title__sub うさぎ、ハムスター、チンチラなど
+					h1.home_title__title 小動物専門の<br/>ペットシッター
+				.home_btn
+					.home_btn_btn.home_btn__about About
+					.home_btn_btn.home_btn__service Service
+		home_bg
+			home_bg_overlay
+	section.about
+		include ./about    
+	

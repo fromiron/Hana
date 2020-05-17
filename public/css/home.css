@@ -1,0 +1,70 @@
+
+
+home_bg {
+  background-image: url(../image/bg1.jpg);
+  position: fixed;
+  display: flex;
+  top: 50px;
+  left: 0;
+  z-index: -9;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+
+home_bg_overlay {
+  left: 0;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: -8;
+}
+
+.home_msg_container {
+  position: absolute ;
+  top: 35%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 9;
+}
+
+h3 {
+  color: var(--main-bg-color);
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.home_title__sub {
+  margin-bottom: 20px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.home_title__title {
+  line-height: 170%;
+  letter-spacing: 10px;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 600;
+}
+.home_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.home_btn_btn {
+  padding: 10px 40px;
+  background-color: var(--main-bg-color);
+  margin: 0 15px;
+  border-radius: 4px;
+}
+section.about {
+  position: absolute;
+  background-color: tomato;
+  top: 100%;
+}
