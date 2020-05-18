@@ -1,0 +1,121 @@
+.about_detail_container {
+  width: 100%;
+  padding: 10em 0;
+  background-image: url(../image/hana.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  margin-bottom: 2em;
+}
+
+.about {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  width: 100%;
+  padding: 10%;
+  box-sizing: border-box;
+}
+
+.about_title_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 65px;
+  line-height: 4em;
+}
+.about_title_container h1 {
+  font-size: 40px;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 600;
+  color: var(--main-gray-color2);
+}
+.about_title_container h3 {
+  font-family: 'Kosugi Maru', sans-serif;
+  color: var(--main-bg-color2);
+}
+
+.about_bottom_container {
+  display: flex;
+  justify-content: space-between;
+}
+.about__feature {
+  width: 30%;
+  padding: 30px;
+  color: white;
+  transition: all ease 0.5s;
+}
+.about__feature:nth-child(1) {
+  background-color: var(--main-bg-color2);
+  border: 0.3em solid var(--main-bg-color2);
+}
+.about__feature:nth-child(2) {
+  background-color: var(--main-bg-color);
+  border: 0.3em solid var(--main-bg-color);
+}
+.about__feature:nth-child(3) {
+  background-color: var(--main-bg-color3);
+  border: 0.3em solid var(--main-bg-color3);
+}
+
+.about__feature:hover {
+  border-color: var(--main-gray-color2);
+}
+
+.about__feature:hover .about__feature__icon i {
+  animation: iconMove 3s infinite;
+}
+
+@keyframes iconMove {
+  0% {
+    transform: translateY(3px);
+  }
+
+  30% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(2px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+.about__feature_top_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about__feature__icon i {
+  font-size: 5em;
+  margin-top: 0.4em;
+}
+.about__feature__title {
+  font-size: 25px;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+.about__feature__text {
+  line-height: 1.7em;
+}
+
+@media screen and (max-width: 768px) {
+  .about_bottom_container {
+    display: block;
+  }
+  .about__feature {
+    width: 100%;
+    color: white;
+    padding: 2em 1em;
+  }
+  .about {
+    padding: 0;
+  }
+}

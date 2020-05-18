@@ -1,13 +1,21 @@
 @import 'navigation.css';
 @import 'home.css';
+@import 'about.css';
 
 :root {
   --main-bg-color: #ff9100;
-  --main-text-color: #353535;
+  --main-bg-color2: #4FC999;
+  --main-bg-color3: #F58EB1;
+  --main-bg-color4: #4AC6D6;
+  --main-gray-color: #353535;
+  --main-gray-color2:#54595F;
 }
 
 body {
   font-family: 'Mukta Malar', sans-serif;
   font-weight: 400;
+  box-sizing: border-box;
+}
+*{
   box-sizing: border-box;
 }

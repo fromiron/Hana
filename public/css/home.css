@@ -1,5 +1,6 @@
-
-
+section.home{
+  overflow: hidden;
+}
 home_bg {
   background-image: url(../image/bg1.jpg);
   position: fixed;
@@ -17,7 +18,7 @@ home_bg_overlay {
   left: 0;
   position: fixed;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.6;
   height: 100%;
   width: 100%;
   z-index: -8;
@@ -25,7 +26,7 @@ home_bg_overlay {
 
 .home_msg_container {
   position: absolute ;
-  top: 35%;
+  top: 45%;
   width: 100%;
   color: white;
   text-align: center;
@@ -63,8 +64,7 @@ h1 {
   margin: 0 15px;
   border-radius: 4px;
 }
-section.about {
-  position: absolute;
-  background-color: tomato;
-  top: 100%;
+
+.home_btn_btn:nth-child(1){
+  background-color: var(--main-bg-color2);
 }

@@ -1,5 +1,5 @@
 a {
-  color: var(--main-text-color);
+  color: var(--main-gray-color2);
 }
 
 .header {
@@ -17,8 +17,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
-  background-color:white;
+  padding: 12px 12px;
+  background-color: white;
 }
 .navigation.logo i {
   font-size: 29px;
@@ -45,7 +45,10 @@ a {
 .navigation.menu li:hover > a {
   color: white;
 }
+.navigation.menu__btn{
+  font-family: 'Kosugi Maru', sans-serif;
 
+}
 .navigation_toggle_btn {
   position: absolute;
   z-index: 9;
@@ -54,7 +57,7 @@ a {
   display: none;
 }
 .navigation_toggle_btn:hover > a {
-  color: rgb(221, 90, 43);
+  color: var(--main-bg-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -65,7 +68,7 @@ a {
     height: 20px;
     font-size: 13px;
     line-height: 30px;
-    padding:0 50px;
+    padding: 0 50px;
   }
   .navigation {
     flex-direction: column;
