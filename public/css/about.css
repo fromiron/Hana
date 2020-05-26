@@ -1,13 +1,42 @@
 .about_detail_container {
   width: 100%;
-  padding: 10em 0;
-  background-image: url(../image/hana.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center 30%;
-  margin-bottom: 2em;
+  padding: 10%;
 }
 
+.about_detail_top {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 15%;
+}
+.about_detail_top__img__label {
+  position: relative;
+  top: -50px;
+  text-align: center;
+  z-index: 5;
+  height: 2em;
+  font-size: 15px;
+  line-height: 2em;
+  font-family: 'Kosugi Maru', sans-serif;
+  color: white;
+  background-color: var(--main-bg-color);
+  box-sizing: border-box;
+  transition: all ease 0.5s;
+}
+.about_detail_top__img__label:hover{
+  background-color: var(--main-bg-color2);
+}
+.about_detail_top__img img {
+  height: 250px;
+}
+.about_detail_top__text {
+  padding: 0 10%;
+  color: var(--main-gray-color2);
+  font-size: 17px;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 600;
+  line-height: 25px;
+}
 .about {
   position: absolute;
   background-color: white;
@@ -117,5 +146,10 @@
   }
   .about {
     padding: 0;
+  }
+
+  .about_detail_top {
+    display: flex;
+    flex-direction: column;
   }
 }

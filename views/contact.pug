@@ -1,4 +1,15 @@
 extends layout
 
 block content
-    h1 contact test
+    form(action="/mail" method="post")
+        p タイトル
+        input(type="text" name="title")
+        p お名前
+        input(type="text" name="userName")
+        p メール
+        input(type="text" name="email")
+        p ペットのの類、数
+        input(type="text" name="pets")
+        p 問い合わせ内容
+        input(type="textarea"  rows="4" cols="50" name="text")
+        input(type="submit" value="送る")

@@ -29,3 +29,10 @@ export const contact = (req, res) => {
     pageTitle: 'Rabbit Sitter Hana - Contact Us',
   });
 };
+
+export const mail = (req, res) => {
+  res.render('mail', {
+    pageTitle: 'Rabbit Sitter Hana - e-mail',
+  });
+};
+

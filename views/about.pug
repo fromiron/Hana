@@ -1,6 +1,11 @@
 extends layout
 
 block content
+    .about_detail_top
+        .about_detail_top__img
+            img(src="../public/image/hana.png", alt="image_hana")
+            .about_detail_top__img__label うさぎ店長のはなちゃん 
+        .about_detail_top__text
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nam in rerum, maxime saepe eum laborum, totam atque odit aliquam molestiae voluptatum cum. A sed iusto pariatur consequatur, esse perferendis.
     .about_detail_container
-
-    include ./partials/about_content
+        include ./partials/about_content
