@@ -1,15 +1,19 @@
 extends layout
 
 block content
-    form(action="/mail" method="post")
-        p タイトル
-        input(type="text" name="title")
-        p お名前
-        input(type="text" name="userName")
-        p メール
-        input(type="text" name="email")
-        p ペットのの類、数
-        input(type="text" name="pets")
-        p 問い合わせ内容
-        input(type="textarea"  rows="4" cols="50" name="text")
-        input(type="submit" value="送る")
+    .mail_form_container
+        .mail_form
+            .contactUs CONTACT US
+            form(action="/mail" method="post")
+                p(class="form_subtitle") タイトル
+                input(type="text" name="title" required)
+                p(class="form_subtitle") お名前
+                input(type="text" name="userName" required )
+                p(class="form_subtitle") メール
+                input(type="text" name="email" required)
+                p(class="form_subtitle") ペットのの類、数
+                input(type="text" name="pets" required)
+                p(class="form_subtitle") 問い合わせ内容                            
+                textarea(cols="30" rows="10" class="textarea" name="text" required)
+                .submit_wrap
+                    input(type="submit" class="submitBtn" value="送る")

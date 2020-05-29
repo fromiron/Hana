@@ -1,15 +1,20 @@
 @import 'navigation.css';
 @import 'home.css';
 @import 'about.css';
+@import 'contact.css';
 
 :root {
-  --main-bg-color: #ff9100;
-  --main-bg-color2: #4FC999;
-  --main-bg-color3: #FF86A5;
-  --main-bg-color4: #4AC6D6;
+  --main-bg-color: #F25C54;
+  --main-bg-color2: #F27059;
+  --main-bg-color3: #F4845F;
+  --main-bg-color4: #F79D65;
+  --main-bg-color5: #F7B267;
   --main-gray-color: #353535;
   --main-gray-color2:#54595F;
+  --gradient-start: #F25C54;
+  --gradient-end: #F4845F;
 }
+
 
 body {
   font-family: 'Mukta Malar', sans-serif;

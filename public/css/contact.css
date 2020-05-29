@@ -1,0 +1,116 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+}
+.form_subtitle{
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+
+}
+.mail_form_container {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.mail_form {
+  margin: 100px 0;
+  width: 700px;
+  background: linear-gradient(
+    33deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.5s ease;
+}
+.mail_form:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.contactUs {
+  margin-bottom: 1.2em;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+.mail_form_container form {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+ 
+  color: white;
+}
+.mail_form_container form input {
+  margin-bottom: 1em;
+}
+.mail_form_container form input[type='text'] {
+  border: none;
+  margin: 15px;
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 1em;
+  font-size: 20px;
+  color: var(--main-gray-color2);
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+}
+.mail_form_container form input[type='text']:focus,
+.textarea:focus {
+  background-color: rgb(255, 236, 227);
+}
+.textarea {
+  border: none;
+  margin: 15px;
+  border-radius: 3px;
+  height: 300px;
+  font-size: 20px;
+  color: var(--main-gray-color2);
+  white-space: pre-line;
+  padding: 1em;
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.submit_wrap {
+  display: flex;
+  justify-content: center;
+}
+.submitBtn {
+  font-weight: 600;
+  margin-top: 20px;
+  background-color:white;
+  border: none;
+  color: var(--main-bg-color2);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 4px;
+}
+.submitBtn:hover {
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.05), 0 4px 5px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 768px) {
+  .mail_form,
+  .mail_form:hover {
+    box-shadow: none;
+    margin: 0;
+  }
+}
